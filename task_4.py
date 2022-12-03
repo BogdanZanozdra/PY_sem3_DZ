@@ -12,3 +12,21 @@ def bin(n):
       n = n // 2
   return b
 print(f'Число {n} в десятичном виде = {bin(n)}')
+
+# Или: 
+
+n = int(input("Введите число: \n"))
+res = []
+while n >= 1:
+  ost = n  %  2
+  res.insert(0, ost)
+  n //= 2
+print(*res)
+
+
+
+
+
+
+
+

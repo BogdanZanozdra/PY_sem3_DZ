@@ -26,3 +26,22 @@ def negative_fib(neg_list):
 
 print(fibonachi(n))
 print(negative_fib(fibonachi(n)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

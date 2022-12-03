@@ -17,3 +17,20 @@ for i in numbers:
     res.append(s)
 print(res)    
 print (f'Разница между максимальным и минимальным значением дробной части элементов: {max(res) - min(res)}')
+
+# Или: 
+
+array = [1.1, 1.2, 3.1, 10.01]
+for i in range(len(array)):
+    array[i] = round(array[i] % 1, 2)
+print(max(array) - min(array))
+
+
+
+
+
+
+
+
+
+

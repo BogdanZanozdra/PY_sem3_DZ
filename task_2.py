@@ -21,3 +21,39 @@ def mult_pairs(listt):
         return res
 
 print(f'Произведения пар чисел списка: {mult_pairs(my_list)}')
+
+
+# Или:
+
+
+array = [2, 3, 4, 5, 6]
+res_array = []
+if len(array) % 2 == 0:
+    for i in range(len(array) // 2):
+        product = array[i] * array[-1-i]
+        res_array.append(product)
+if len(array) % 2 != 0:
+     for i in range((len(array) // 2) + 1):
+        product = array[i] * array[-1-i]
+        res_array.append(product)
+
+print(res_array)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

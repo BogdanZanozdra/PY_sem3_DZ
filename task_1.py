@@ -2,16 +2,31 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных индексы элементы 3 и 9, ответ: 12
 
-# my_list = [2, 4, 8, 32, 43, 21, 8]
-# def if_odd(listt):
-#     res = [] 
-#     for i in range(len(listt)):
-#         if i % 2 != 0:
-#             res.append(listt[i])
-#     return res
-# print(f'На нечетных индексах элементы : {if_odd(my_list)}')
+my_list = [2, 4, 8, 32, 43, 21, 8]
+def if_odd(listt):
+    res = [] 
+    summ = 0
+    for i in range(1, len(listt), 2):
+        # if i % 2 != 0:
+        res.append(listt[i])
+        summ += listt[i]
+    return res,'Сумма элементов, стоящих на нечетных индексах равна:' , summ
+print(f'На нечетных индексах элементы : {if_odd(my_list)}')
 
-#
+
+# Или:
+
+array = [1, 3, 2, 5, 4]
+print(array)
+summ = 0
+for i in range(len(array)):
+    if i % 2 != 0:
+        summ += array[i]
+print(f'Сумма чисел, стоящих на нечетных индексах равна:  {summ} ')
+
+
+
+
 
 
 
